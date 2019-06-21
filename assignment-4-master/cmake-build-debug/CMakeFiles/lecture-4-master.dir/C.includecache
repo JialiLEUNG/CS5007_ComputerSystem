@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hcloud/Desktop/Jiali/NEU/courses/5007_computerSystem/lecture4/assignment-4-master/manage_threads.c
+stdlib.h
+-
+stdio.h
+-
+stdbool.h
+-
+unistd.h
+-
+pthread.h
+-
+signal.h
+-
+
