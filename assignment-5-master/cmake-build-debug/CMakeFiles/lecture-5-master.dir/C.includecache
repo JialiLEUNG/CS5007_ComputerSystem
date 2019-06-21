@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hcloud/Desktop/Jiali/NEU/courses/5007_computerSystem/lecture5/assignment-5-master/assignment-5.c
+pthread.h
+-
+stdlib.h
+-
+stdio.h
+-
+unistd.h
+-
+
