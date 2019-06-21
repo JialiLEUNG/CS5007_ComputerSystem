@@ -1,0 +1,4 @@
+#!/bin/bash
+nfiles=$(find $1 -mindepth 1  -maxdepth 1 -type f ! -name ".*" | wc -l)
+#nfiles=$(( nfiles-1))
+printf "Number of subdirectories is %s\n"$nfiles

@@ -1,0 +1,6 @@
+#!/bin/bash
+# This script takes a date parameter of the format "2019-05-09" and prints it as "May 9, 2019".
+IFS='-' read -r var1 var2 var3 <<< $1
+declare -A arr
+arr=([01]="January" [02]="Feburary" [03]="March" [04]="April" [05]="May" [06]="June" [07]="July" [08]="August" [09]="September" [10]="October" [11]="November" [12]="December")
+printf "%s\n" $date "${arr[$var2]} $var3, $var1"

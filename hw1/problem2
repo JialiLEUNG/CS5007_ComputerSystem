@@ -1,0 +1,14 @@
+#!/bin/bash
+# This script  takes one or more numbers as command line parameters and prints the largest number.
+# For example, if 'bash problem2 1 2 3' would print "The largest number is 3".
+maxnum=$1
+count=1
+for var in "$@"
+do
+   # printf  "number %s is %s\n" "$count" "$var"
+   # count=$((count+1))
+    if (( $(echo "$var >  $maxnum" |bc -l) ));then
+        maxnum=$var
+    fi
+done
+printf "The largest number is %s"$maxnum

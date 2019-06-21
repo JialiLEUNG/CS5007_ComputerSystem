@@ -1,0 +1,4 @@
+#!/bin/bash
+# This script saves the 'man' page for the command specified by its first parameter, to a file whose name is the command name followed by ".txt". 
+# For example, when you run 'bash problem1 ls', a "ls.txt" is created in the current directory with the contents of "ls" man page.
+man $1 > $1.txt
